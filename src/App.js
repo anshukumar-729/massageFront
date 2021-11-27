@@ -8,7 +8,8 @@ function App() {
   const [data,setData] = useState([])
 
   async function SendMassage(event) {
-    event.preventDefault()
+    if (name==!'' && massage!=''){
+    event.preventDefault()}
     try{
     const response = await fetch(
       "https://arcane-brushlands-01906.herokuapp.com/api/register",
@@ -28,7 +29,6 @@ function App() {
       setMyName(data.result[data.result.length - 1].name)
       setMyMassage(data.result[data.result.length - 1].massage)
       console.log(Myname)
-      setData(data.result)
     }catch(err){
       console.log(err)
     }
