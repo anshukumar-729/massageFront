@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {useEffect} from "react";
 
 function App() {
   const [name, setName] = useState('')
@@ -7,12 +8,33 @@ function App() {
   const [Mymassage,setMyMassage] = useState('')
   const [data,setData] = useState([])
 
+  async function getMassage(){
+    try{
+      const response = await fetch(
+      // "https://arcane-brushlands-01906.herokuapp.com/api/register",
+      "http://localhost:3020/api/read"
+      )
+const data = await response.json()
+      console.log(data.result[data.result.length-1])
+      setMyName(data.result[data.result.length - 1].name)
+      setMyMassage(data.result[data.result.length - 1].massage)
+}catch(err){
+    console.log(err)
+  }
+}
+
+    
+ 
+
+
+
   async function SendMassage(event) {
-    if (name==!'' && massage!=''){
-    event.preventDefault()}
+    
+    event.preventDefault()
     try{
     const response = await fetch(
       "https://arcane-brushlands-01906.herokuapp.com/api/register",
+      // "http://localhost:3020/api/register",
       {
         method: "POST",
         headers: {
@@ -36,7 +58,7 @@ function App() {
     // const data = await response.json()
     // console.log(data)
   }
-  SendMassage();
+  
 
   return (
     <div className="App">
@@ -66,6 +88,7 @@ function App() {
          {data}
        
       </form>
+      <button type="button" onClick={getMassage}>Refresh</button>
     </div>
   );
 }
