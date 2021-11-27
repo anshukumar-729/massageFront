@@ -188,13 +188,18 @@ useEffect(() => {
 
   return (
     <div className="App">
-      
-      <h1>Messenger</h1>
+      <h4>
+        This website only a prototype of the website, the main website with good
+        user interface and functionalities will be deploy soon!!
+      </h4>
+      <h4>This website uses MongoDB, Express(Node), React and Heroku.</h4>
+      <h4>Developer: Anshu kumar, Btech (IIT BHILAI)</h4>
+      <h1>Live Messenger(beta-version)</h1>
 
       <form onSubmit={SendMassage}>
         <input
           value={name}
-          onChange={(e)=>setName(e.target.value)}
+          onChange={(e) => setName(e.target.value)}
           type="text"
           placeholder="Name"
         />
@@ -204,50 +209,112 @@ useEffect(() => {
           type="text"
           placeholder="Massage"
         />
-        
-        <input type="submit" value="Send" />
-         
-      
-        
-      
-       
-      </form>
-    <br/>
-      <button type="button" onClick={getMassage}>Refresh</button>
 
-      <h1>Messages</h1>
-   <h3> Name: {n1} , Message: {m1}</h3>
-   <h3> Name: {n2} , Message: {m2}</h3>
-   <h3> Name: {n3} , Message: {m3}</h3>
-   <h3> Name: {n4} , Message: {m4}</h3>
-   <h3> Name: {n5} , Message: {m5}</h3>
-   <h3> Name: {n6} , Message: {m6}</h3>
-   <h3> Name: {n7} , Message: {m7}</h3>
-   <h3> Name: {n8} , Message: {m8}</h3>
-   <h3> Name: {n9} , Message: {m9}</h3>
-   <h3>Name: {n10} , Message: {m10}</h3>
-   <h3>Name: {n11} , Message: {m11}</h3>
-   <h3>Name: {n12} , Message: {m12}</h3>
-   <h3>Name: {n13} , Message: {m13}</h3>
-   <h3>Name: {n14} , Message: {m14}</h3>
-   <h3>Name: {n15} , Message: {m15}</h3>
-   <h3>Name: {n16} , Message: {m16}</h3>
-   <h3>Name: {n17} , Message: {m17}</h3>
-   <h3>Name: {n18} , Message: {m18}</h3>
-   <h3>Name: {n19} , Message: {m19}</h3>
-   <h3>Name: {n20} , Message: {m20}</h3>
-   <h3>Name: {n21} , Message: {m21}</h3>
-   <h3>Name: {n22} , Message: {m22}</h3>
-   <h3>Name: {n23} , Message: {m23}</h3>
-   <h3>Name: {n24} , Message: {m24}</h3>
-   <h3>Name: {n25} , Message: {m25}</h3>
-   <h3>Name: {n26} , Message: {m26}</h3>
-   <h3>Name: {n27} , Message: {m27}</h3>
-   <h3>Name: {n28} , Message: {m28}</h3>
-   <h3>Name: {n29} , Message: {m29}</h3>
-   <h3>Name: {n30} , Message: {m30}</h3>
-   <h3>Name: {n31} , Message: {m31}</h3>
-      
+        <input type="submit" value="Send" />
+      </form>
+      <br />
+
+      <h3>
+        Admin, Your identification will not going to be store, Talk with unknown
+        name. Anyone can see your messeges, so be carefull!!
+      </h3>
+      <h1>Last Messeges</h1>
+      <button type="button" onClick={getMassage}>
+        Refresh
+      </button>
+      <h3>
+        Name: {n1} , Message: {m1}
+      </h3>
+      <h3>
+        Name: {n2} , Message: {m2}
+      </h3>
+      <h3>
+        Name: {n3} , Message: {m3}
+      </h3>
+      <h3>
+        Name: {n4} , Message: {m4}
+      </h3>
+      <h3>
+        Name: {n5} , Message: {m5}
+      </h3>
+      <h3>
+        Name: {n6} , Message: {m6}
+      </h3>
+      <h3>
+        Name: {n7} , Message: {m7}
+      </h3>
+      <h3>
+        Name: {n8} , Message: {m8}
+      </h3>
+      <h3>
+        Name: {n9} , Message: {m9}
+      </h3>
+      <h3>
+        Name: {n10} , Message: {m10}
+      </h3>
+      <h3>
+        Name: {n11} , Message: {m11}
+      </h3>
+      <h3>
+        Name: {n12} , Message: {m12}
+      </h3>
+      <h3>
+        Name: {n13} , Message: {m13}
+      </h3>
+      <h3>
+        Name: {n14} , Message: {m14}
+      </h3>
+      <h3>
+        Name: {n15} , Message: {m15}
+      </h3>
+      <h3>
+        Name: {n16} , Message: {m16}
+      </h3>
+      <h3>
+        Name: {n17} , Message: {m17}
+      </h3>
+      <h3>
+        Name: {n18} , Message: {m18}
+      </h3>
+      <h3>
+        Name: {n19} , Message: {m19}
+      </h3>
+      <h3>
+        Name: {n20} , Message: {m20}
+      </h3>
+      <h3>
+        Name: {n21} , Message: {m21}
+      </h3>
+      <h3>
+        Name: {n22} , Message: {m22}
+      </h3>
+      <h3>
+        Name: {n23} , Message: {m23}
+      </h3>
+      <h3>
+        Name: {n24} , Message: {m24}
+      </h3>
+      <h3>
+        Name: {n25} , Message: {m25}
+      </h3>
+      <h3>
+        Name: {n26} , Message: {m26}
+      </h3>
+      <h3>
+        Name: {n27} , Message: {m27}
+      </h3>
+      <h3>
+        Name: {n28} , Message: {m28}
+      </h3>
+      <h3>
+        Name: {n29} , Message: {m29}
+      </h3>
+      <h3>
+        Name: {n30} , Message: {m30}
+      </h3>
+      <h3>
+        Name: {n31} , Message: {m31}
+      </h3>
     </div>
   );
 }
