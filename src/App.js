@@ -189,7 +189,7 @@ useEffect(() => {
   return (
     <div className="App">
       
-      <h1>Massanger</h1>
+      <h1>Messenger</h1>
 
       <form onSubmit={SendMassage}>
         <input
@@ -215,38 +215,38 @@ useEffect(() => {
     <br/>
       <button type="button" onClick={getMassage}>Refresh</button>
 
-      <h1>Massages</h1>
-   <h3> Name: {n1} , Massage: {m1}</h3>
-   <h3> Name: {n2} , Massage: {m2}</h3>
-   <h3> Name: {n3} , Massage: {m3}</h3>
-   <h3> Name: {n4} , Massage: {m4}</h3>
-   <h3> Name: {n5} , Massage: {m5}</h3>
-   <h3> Name: {n6} , Massage: {m6}</h3>
-   <h3> Name: {n7} , Massage: {m7}</h3>
-   <h3> Name: {n8} , Massage: {m8}</h3>
-   <h3> Name: {n9} , Massage: {m9}</h3>
-   <h3>Name: {n10} , Massage: {m10}</h3>
-   <h3>Name: {n11} , Massage: {m11}</h3>
-   <h3>Name: {n12} , Massage: {m12}</h3>
-   <h3>Name: {n13} , Massage: {m13}</h3>
-   <h3>Name: {n14} , Massage: {m14}</h3>
-   <h3>Name: {n15} , Massage: {m15}</h3>
-   <h3>Name: {n16} , Massage: {m16}</h3>
-   <h3>Name: {n17} , Massage: {m17}</h3>
-   <h3>Name: {n18} , Massage: {m18}</h3>
-   <h3>Name: {n19} , Massage: {m19}</h3>
-   <h3>Name: {n20} , Massage: {m20}</h3>
-   <h3>Name: {n21} , Massage: {m21}</h3>
-   <h3>Name: {n22} , Massage: {m22}</h3>
-   <h3>Name: {n23} , Massage: {m23}</h3>
-   <h3>Name: {n24} , Massage: {m24}</h3>
-   <h3>Name: {n25} , Massage: {m25}</h3>
-   <h3>Name: {n26} , Massage: {m26}</h3>
-   <h3>Name: {n27} , Massage: {m27}</h3>
-   <h3>Name: {n28} , Massage: {m28}</h3>
-   <h3>Name: {n29} , Massage: {m29}</h3>
-   <h3>Name: {n30} , Massage: {m30}</h3>
-   <h3>Name: {n31} , Massage: {m31}</h3>
+      <h1>Messages</h1>
+   <h3> Name: {n1} , Message: {m1}</h3>
+   <h3> Name: {n2} , Message: {m2}</h3>
+   <h3> Name: {n3} , Message: {m3}</h3>
+   <h3> Name: {n4} , Message: {m4}</h3>
+   <h3> Name: {n5} , Message: {m5}</h3>
+   <h3> Name: {n6} , Message: {m6}</h3>
+   <h3> Name: {n7} , Message: {m7}</h3>
+   <h3> Name: {n8} , Message: {m8}</h3>
+   <h3> Name: {n9} , Message: {m9}</h3>
+   <h3>Name: {n10} , Message: {m10}</h3>
+   <h3>Name: {n11} , Message: {m11}</h3>
+   <h3>Name: {n12} , Message: {m12}</h3>
+   <h3>Name: {n13} , Message: {m13}</h3>
+   <h3>Name: {n14} , Message: {m14}</h3>
+   <h3>Name: {n15} , Message: {m15}</h3>
+   <h3>Name: {n16} , Message: {m16}</h3>
+   <h3>Name: {n17} , Message: {m17}</h3>
+   <h3>Name: {n18} , Message: {m18}</h3>
+   <h3>Name: {n19} , Message: {m19}</h3>
+   <h3>Name: {n20} , Message: {m20}</h3>
+   <h3>Name: {n21} , Message: {m21}</h3>
+   <h3>Name: {n22} , Message: {m22}</h3>
+   <h3>Name: {n23} , Message: {m23}</h3>
+   <h3>Name: {n24} , Message: {m24}</h3>
+   <h3>Name: {n25} , Message: {m25}</h3>
+   <h3>Name: {n26} , Message: {m26}</h3>
+   <h3>Name: {n27} , Message: {m27}</h3>
+   <h3>Name: {n28} , Message: {m28}</h3>
+   <h3>Name: {n29} , Message: {m29}</h3>
+   <h3>Name: {n30} , Message: {m30}</h3>
+   <h3>Name: {n31} , Message: {m31}</h3>
       
     </div>
   );
