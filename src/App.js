@@ -5,6 +5,7 @@ function App() {
   const [massage,setMassage] = useState('')
   const [Myname, setMyName] = useState('')
   const [Mymassage,setMyMassage] = useState('')
+  const [data,setData] = useState([])
 
   async function SendMassage(event) {
     event.preventDefault()
@@ -27,6 +28,7 @@ function App() {
       setMyName(data.result[data.result.length - 1].name)
       setMyMassage(data.result[data.result.length - 1].massage)
       console.log(Myname)
+      setData(data.result)
     }catch(err){
       console.log(err)
     }
@@ -34,6 +36,7 @@ function App() {
     // const data = await response.json()
     // console.log(data)
   }
+  SendMassage();
 
   return (
     <div className="App">
@@ -60,6 +63,7 @@ function App() {
            <h3>Name: {Myname}</h3>
            <h3>Massage: {Mymassage}</h3>
          </p>
+         {data}
        
       </form>
     </div>
