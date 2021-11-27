@@ -9,16 +9,19 @@ function App() {
   async function SendMassage(event) {
     event.preventDefault()
     try{
-    const response = await fetch('http://localhost:3020/api/register' ,{
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        name,
-        massage
-      }),
-    })
+    const response = await fetch(
+      "https://arcane-brushlands-01906.herokuapp.com/api/register",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          massage,
+        }),
+      }
+    );
     const data = await response.json()
       console.log(data.result[data.result.length-1])
       setMyName(data.result[data.result.length - 1].name)
