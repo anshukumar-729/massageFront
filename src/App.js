@@ -145,9 +145,18 @@ const data = await response.json()
     
  
 
+const MINUTE_MS = 100;
 
+useEffect(() => {
+  const interval = setInterval(() => {
+    getMassage();
+  }, MINUTE_MS);
+
+  return () => clearInterval(interval); // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
+}, []);
 
   async function SendMassage(event) {
+    getMassage();
     
     event.preventDefault()
     try{
